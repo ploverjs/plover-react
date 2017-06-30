@@ -1,0 +1,43 @@
+{
+  "name": "plover-react",
+  "version": "0.0.1",
+  "description": "plover plugin for render react plugin",
+  "main": "lib/index",
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha --require should --reporter spec --recursive --bail --check-leaks test/",
+    "cov": "istanbul cover _mocha -- --require should --recursive --bail --check-leaks test/ -R spec",
+    "travis": "istanbul cover _mocha --report lcovonly -- --require should --recursive --bail --check-leaks test/ -R spec",
+    "ci": "npm run lint && npm run test && npm run travis",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -o CHANGELOG.md -s"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^1.2.0",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "istanbul": "^0.4.1",
+    "mocha": "^3.2.0",
+    "should": "^11.1.1",
+    "supertest": "^2.0.0"
+  },
+  "plover": {
+    "plugin": "lib/plugin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ploverjs/plover-react.git"
+  },
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ploverjs/plover-react/issues"
+  },
+  "homepage": "https://github.com/ploverjs/plover-react#readme"
+}
