@@ -1,6 +1,6 @@
 {
   "name": "plover-react",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "plover plugin for render react plugin",
   "main": "lib/index",
   "scripts": {
@@ -24,7 +24,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.14.1",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-bce": "^2.0.1",
     "istanbul": "^0.4.1",
     "mocha": "^3.2.0",
     "should": "^11.1.1",
