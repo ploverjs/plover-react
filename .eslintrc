@@ -1,5 +1,3 @@
 {
-  extends: "eslint-config-airbnb-base",
-  rules: {
-  }
+  extends: "eslint-config-airbnb"
 }

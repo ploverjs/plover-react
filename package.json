@@ -1,6 +1,6 @@
 {
   "name": "plover-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "plover plugin for render react plugin",
   "main": "lib/index",
   "scripts": {
@@ -15,8 +15,10 @@
     "lib"
   ],
   "dependencies": {
+    "create-tag": "^0.2.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "redux": "^3.7.1"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
