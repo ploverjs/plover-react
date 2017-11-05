@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - stable
+  - 8
+script:
+  - npm run ci
+after_script:
+  - npm install codecov
+  - ./node_modules/.bin/codecov

@@ -1,1 +1,5 @@
 {{= react.render('Hello', {name: 'Plover'})}}
+
+{{= react.render('App', {store: react.store(state)})}}
+
+{{= react.render('NotExist')}}
